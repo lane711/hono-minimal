@@ -4,7 +4,7 @@ import { getById, putData } from "../data/data";
 export function setupApi(app) {
 
   app.get('/api/test', (c) => {
-    return c.text('Many posts')
+    return c.text('ok')
   })
 
   app.get("/api/forms", async (c) => c.html(await loadForm(c)));
